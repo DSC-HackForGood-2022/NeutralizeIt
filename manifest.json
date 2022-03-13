@@ -5,13 +5,25 @@
   "version": "1.0",
   "content_scripts": [
     {
-      "matches": ["http://*/*", "https://*/*"],
+      "matches": ["https://www.linkedin.com/*"],
       "js": [
         "content_scripts/jquery.js",
         "content_scripts/symbol_table.js",
         "content_scripts/filter.js",
-        "content_scripts/content.js"
+        "content_scripts/recurseOnChildren.js",
+        "content_scripts/linkedInFilter.js"
       ]
+    },
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "content_scripts/jquery.js",
+        "content_scripts/symbol_table.js",
+        "content_scripts/filter.js",
+        "content_scripts/recurseOnChildren.js",
+        "content_scripts/generalFilter.js"
+      ],
+      "exclude_matches": ["https://www.linkedin.com/*"]
     }
   ]
 }

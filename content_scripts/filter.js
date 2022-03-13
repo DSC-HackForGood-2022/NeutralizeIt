@@ -13,7 +13,8 @@ const filterText = (givenText) => {
 const replace = (genderWord) => {
   const query = genderWord
     .toLowerCase()
-    .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "");
+    .replace(/[^\w\s]|_/g, "")
+    .replace(/\s+/g, " ");
   if (!dictionary.hasOwnProperty(query)) {
     return genderWord;
   }
