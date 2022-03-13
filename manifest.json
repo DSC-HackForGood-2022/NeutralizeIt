@@ -9,6 +9,7 @@
       "js": [
         "content_scripts/jquery.js",
         "content_scripts/symbol_table.js",
+        "content_scripts/filter.js",
         "content_scripts/content.js"
       ]
     }
