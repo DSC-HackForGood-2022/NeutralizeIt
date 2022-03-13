@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "NeutralizeIt",
+  "description": "Replaces gender coded words with neutral ones. Intended to help remove biases from Job Searches",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": [
+        "content_scripts/jquery.js",
+        "content_scripts/symbol_table.js",
+        "content_scripts/content.js"
+      ]
+    }
+  ]
+}
