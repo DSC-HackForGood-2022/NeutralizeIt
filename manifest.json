@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "NeutralizeIt",
   "description": "Replaces gender coded words with neutral ones. Intended to help remove biases from Job Searches",
   "version": "1.0",
